@@ -1,0 +1,5 @@
+FROM nextcloud:fpm-alpine
+WORKDIR /
+RUN wget https://github.com/bacos003/nextcloud-image/blob/main/install-packages.sh
+RUN chmod +x install-packages.sh
+RUN ./install-packages.sh
